@@ -61,6 +61,10 @@ How to Use:
 Flow Chart: 
 <img width="938" height="498" alt="image" src="https://github.com/user-attachments/assets/8025e26d-07b6-4db1-8769-b0b560539f83" />
 
+Wiring Diagram: 
+<img width="831" height="217" alt="image" src="https://github.com/user-attachments/assets/b375a6c1-e3b3-4bcb-a1fb-acddc712c6b4" />
+
+
 Expected Outcome:
 After completing the setup, calibrating sensors, and tuning the PID controller, the follower should smoothly track the welding gun’s movement, maintaining a constant distance and adjusting speed based on the sensor feedback.
 
