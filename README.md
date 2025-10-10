@@ -7,22 +7,27 @@ Intro:
 The Linear Fume Tracker is a system designed to follow the welding gun to effectively extract fumes, ensuring a clean working environment for the welder.
 
 Overview:
+
 In this prototype, two miniature blocks were used: a smaller block (the follower) and a larger block (the welding gun). As the larger block moves along the track, the follower adjusts its position in real-time, maintaining a constant distance and varying speed. The system operates using an ultrasonic sensor for real-time distance tracking and PID control to adjust the follower’s movement, maintaining a precise distance from the welding gun. This setup mimics the fume extractor hood's functionality in a real-world welding scenario, providing an automated solution for cleaner air during welding operations.
 
 Features:
+
 •	Real-time fume extraction based on welding gun movement.
 •	Distance tracking with an ultrasonic sensor.
 •	Precise follower movement using PID control.
 •	Adjustable DC motor speed and direction based on PID feedback.
 
 How to build: 
+
 Electronics Components: 
+
 •	Ultrasonic Sensors
 •	DC Motor 
 •	L293D Chip
 •	Arduino Uno
 •	Breadboard
 •	Jumper Cables
+
 Mechanical Components:
 •	Small and Big Wooden Blocks
 •	Wooden Frame
@@ -48,9 +53,11 @@ Step-by-Step Instructions:
 •	Connect the black (negative) wire of the motor to L293D pin 7.
 
 Sensor Calibration: 
+
 • Once the ultrasonic sensor circuit is set up, perform static calibration to eliminate unexpected readings. Place the follower block at a fixed distance and send ultrasonic waves via the Trig pin to check for accuracy.
 
 How to Use:
+
 •	Move the larger block at varying speeds (slow, medium, fast) toward the follower block equipped with the sensor.
 •	Set initial PID parameters Ki and Kd to 0, and increment Kp while observing system oscillations.
 •	Fine-tune Ki and Kd after observing system behavior.
